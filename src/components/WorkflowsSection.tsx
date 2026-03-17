@@ -4,50 +4,50 @@ import { ChevronLeft, ChevronRight, Plus, ArrowRight, MessageSquare, GitBranch, 
 const carouselCards = [
   {
     id: 1,
-    category: "Запросы клиентов",
-    title: "Создавайте то, что нужно клиентам",
+    category: "Социальные сети",
+    title: "Анализируй профили и связи",
     icon: ArrowRight,
     mockup: "intercom",
   },
   {
     id: 2,
-    category: "Git-интеграция",
-    title: "Автоматизируйте PR и коммиты",
+    category: "Git и код",
+    title: "Находи данные в репозиториях",
     icon: Plus,
     mockup: "github",
   },
   {
     id: 3,
-    category: "Orbit Mobile",
-    title: "Управляйте работой откуда угодно",
+    category: "Мобильная версия",
+    title: "Исследуй где угодно",
     icon: ArrowRight,
     mockup: "mobile",
   },
   {
     id: 4,
-    category: "Orbit Asks",
-    title: "Превращайте запросы в задачи",
+    category: "Задания платформы",
+    title: "Решай реальные кейсы",
     icon: ArrowRight,
     mockup: "asks",
   },
   {
     id: 5,
-    category: "Интеграции Orbit",
-    title: "100+ способов расширить возможности",
+    category: "Интеграции",
+    title: "50+ OSINT-инструментов",
     icon: ArrowRight,
     mockup: "integrations",
   },
   {
     id: 6,
-    category: "Интеграция с Figma",
-    title: "Связь между разработкой и дизайном",
+    category: "Визуализация",
+    title: "Строй карты связей",
     icon: ArrowRight,
     mockup: "figma",
   },
   {
     id: 7,
     category: "Для разработчиков",
-    title: "Создавайте плагины через Orbit API",
+    title: "Автоматизируй через API",
     icon: ArrowRight,
     mockup: "api",
   },
@@ -226,7 +226,7 @@ export function WorkflowsSection() {
   }
 
   return (
-    <section className="relative py-24" style={{ backgroundColor: "#09090B" }}>
+    <section className="relative py-24" style={{ backgroundColor: "#050d1f" }}>
       {/* Top gradient */}
       <div
         className="absolute top-0 left-0 right-0 pointer-events-none"
@@ -240,25 +240,24 @@ export function WorkflowsSection() {
         {/* Header */}
         <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-8 mb-16">
           <div className="lg:max-w-xl">
-            {/* Orange indicator */}
+            {/* Blue indicator */}
             <div className="flex items-center gap-2 mb-6">
-              <div className="w-2 h-2 rounded-full bg-orange-500" />
-              <span className="text-sm text-zinc-400">Процессы и интеграции</span>
-              <ChevronRight className="w-4 h-4 text-zinc-600" />
+              <div className="w-2 h-2 rounded-full bg-blue-500" />
+              <span className="text-sm text-blue-300/60">Методики и инструменты</span>
+              <ChevronRight className="w-4 h-4 text-blue-600/40" />
             </div>
 
             {/* Heading */}
             <h2 className="text-4xl md:text-5xl font-medium text-white leading-[1.1]">
-              Работайте слаженно
+              Работайте эффективно
               <br />
-              между инструментами
+              с любыми источниками
             </h2>
           </div>
 
           {/* Description */}
-          <p className="text-zinc-400 lg:max-w-sm lg:pt-12">
-            Расширьте возможности Orbit с помощью интеграций, которые синхронизируют всю команду и держат фокус на
-            главном.
+          <p className="text-blue-300/50 lg:max-w-sm lg:pt-12">
+            Используйте весь арсенал OSINT-методик: от анализа социальных сетей до работы с техническими данными и геолокацией.
           </p>
         </div>
 
@@ -270,7 +269,7 @@ export function WorkflowsSection() {
           >
             {carouselCards.map((card) => (
               <div key={card.id} className="flex-shrink-0 w-[calc(25%-12px)] min-w-[280px]">
-                <div className="bg-zinc-900/50 border border-zinc-800/50 rounded-xl overflow-hidden h-[340px] flex flex-col">
+                <div className="bg-blue-950/30 border border-blue-900/30 rounded-xl overflow-hidden h-[340px] flex flex-col">
                   {/* Mockup area */}
                   <div className="flex-1 relative overflow-hidden">
                     <CardMockup type={card.mockup} />
@@ -278,7 +277,7 @@ export function WorkflowsSection() {
                     <div
                       className="absolute bottom-0 left-0 right-0 h-16 pointer-events-none"
                       style={{
-                        background: "linear-gradient(to top, rgba(9,9,11,0.9), transparent)",
+                        background: "linear-gradient(to top, rgba(5,13,31,0.9), transparent)",
                       }}
                     />
                   </div>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&subset=cyrillic,cyrillic-ext,latin&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&subset=cyrillic,cyrillic-ext,latin&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -7,7 +7,7 @@
 /* Custom thin scrollbar styling */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #4b5563 #1f2937;
+  scrollbar-color: #1d4ed8 #0a0f1e;
 }
 
 ::-webkit-scrollbar {
@@ -15,11 +15,11 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #1f2937;
+  background: #0a0f1e;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #4b5563;
+  background: #1d4ed8;
   border-radius: 3px;
 }
 
@@ -111,12 +111,21 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-family:
+      "Inter",
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      Oxygen,
+      Ubuntu,
+      Cantarell,
+      sans-serif;
   }
 
   /* Add text selection styling */
   ::selection {
-    background-color: #7170ff;
+    background-color: #2563eb;
     color: white;
   }
 }

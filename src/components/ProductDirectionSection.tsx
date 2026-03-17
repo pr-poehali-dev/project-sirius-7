@@ -15,9 +15,9 @@ export function ProductDirectionSection() {
       <div className="max-w-6xl mx-auto">
         {/* Section label */}
         <div className="flex items-center gap-2 mb-6">
-          <div className="w-3 h-3 rounded-full bg-green-500" />
-          <span className="text-zinc-400 text-sm">Проекты и долгосрочное планирование</span>
-          <ChevronRight className="w-4 h-4 text-zinc-500" />
+          <div className="w-3 h-3 rounded-full bg-blue-500" />
+          <span className="text-blue-300/60 text-sm">Прогрессия и достижения</span>
+          <ChevronRight className="w-4 h-4 text-blue-600/40" />
         </div>
 
         {/* Section heading */}
@@ -30,13 +30,13 @@ export function ProductDirectionSection() {
             lineHeight: 1.1,
           }}
         >
-          Задайте направление продукта
+          Отслеживай свой прогресс
         </h2>
 
         {/* Description */}
-        <p className="text-zinc-400 text-lg max-w-md mb-16">
-          <span className="text-white font-medium">Объедините команду вокруг единой дорожной карты.</span> Планируйте,
-          управляйте и отслеживайте все инициативы с помощью визуальных инструментов Orbit.
+        <p className="text-blue-300/50 text-lg max-w-md mb-16">
+          <span className="text-white font-medium">Визуальная дорожная карта навыков.</span> Проходи задания,
+          повышай уровень и отслеживай развитие своей OSINT-экспертизы.
         </p>
 
         {/* 3D Timeline Visualization */}
@@ -186,14 +186,14 @@ export function ProductDirectionSection() {
         {/* Bottom two-column section */}
         <div className="grid grid-cols-1 md:grid-cols-2">
           {/* Left column - Manage projects end-to-end */}
-          <div className="border-t border-r border-b border-zinc-800 pt-10 pr-10 pb-16">
-            <h3 className="text-xl font-medium text-zinc-200 mb-3">Управляйте проектами от А до Я</h3>
-            <p className="text-zinc-500 text-base leading-relaxed mb-8">
-              Объедините спецификации, этапы, задачи и документацию в одном месте.
+          <div className="border-t border-r border-b border-blue-900/30 pt-10 pr-10 pb-16">
+            <h3 className="text-xl font-medium text-blue-100 mb-3">Структурируй расследование</h3>
+            <p className="text-blue-400/40 text-base leading-relaxed mb-8">
+              Собирай улики, создавай временны́е линии и документируй каждый шаг расследования.
             </p>
 
-            <div className="rounded-xl border border-zinc-800 bg-zinc-900/50 p-5">
-              <h4 className="text-lg font-medium text-zinc-200 mb-5">Обзор проекта</h4>
+            <div className="rounded-xl border border-blue-900/30 bg-blue-950/20 p-5">
+              <h4 className="text-lg font-medium text-blue-100 mb-5">Текущее задание</h4>
 
               {/* Properties row */}
               <div className="flex items-center gap-4 mb-4">
@@ -252,10 +252,10 @@ export function ProductDirectionSection() {
           </div>
 
           {/* Right column - Project updates */}
-          <div className="border-t border-b border-zinc-800 pt-10 pl-10 pb-16">
-            <h3 className="text-xl font-medium text-zinc-200 mb-3">Обновления проекта</h3>
-            <p className="text-zinc-500 text-base leading-relaxed mb-8">
-              Сообщайте о прогрессе и статусе проекта с помощью встроенных отчетов.
+          <div className="border-t border-b border-blue-900/30 pt-10 pl-10 pb-16">
+            <h3 className="text-xl font-medium text-blue-100 mb-3">Прогресс и статус</h3>
+            <p className="text-blue-400/40 text-base leading-relaxed mb-8">
+              Отслеживай прогресс по заданиям и получай подсказки при необходимости.
             </p>
 
             <div className="relative h-48">

@@ -12,7 +12,7 @@ const agents = [
 
 export function AISection() {
   return (
-    <div className="relative z-20 py-40" style={{ backgroundColor: "#09090B" }}>
+    <div className="relative z-20 py-40" style={{ backgroundColor: "#050d1f" }}>
       <div
         className="absolute top-0 left-0 right-0 pointer-events-none"
         style={{
@@ -31,7 +31,7 @@ export function AISection() {
             className="flex items-center gap-2 mb-6"
           >
             <div className="w-2 h-2 rounded-full bg-blue-500" />
-            <span className="text-zinc-400 text-sm">Искусственный интеллект</span>
+            <span className="text-blue-300/60 text-sm">Инструменты и методики</span>
             <ChevronRight className="w-4 h-4 text-zinc-500" />
           </motion.div>
 
@@ -49,7 +49,7 @@ export function AISection() {
               lineHeight: 1.1,
             }}
           >
-            Разработка с ИИ-помощником
+            OSINT с ИИ-ассистентом
           </motion.h2>
 
           {/* Description */}
@@ -58,10 +58,10 @@ export function AISection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-zinc-400 max-w-md mb-8"
+            className="text-blue-300/50 max-w-md mb-8"
           >
-            <span className="text-white font-medium">Orbit для агентов.</span> Выбирайте из множества ИИ-агентов и
-            делегируйте задачи: от генерации кода до других технических задач.
+            <span className="text-white font-medium">ИИ в разведке.</span> Используйте ИИ-инструменты для ускорения анализа:
+            от распознавания объектов на фото до автоматической обработки данных.
           </motion.p>
 
           {/* Learn more button */}
@@ -70,7 +70,7 @@ export function AISection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="px-5 py-2.5 bg-zinc-800 text-zinc-300 rounded-lg border border-zinc-700 hover:bg-zinc-700 transition-colors text-sm flex items-center gap-2 mb-16"
+            className="px-5 py-2.5 bg-blue-900/40 text-blue-300 rounded-lg border border-blue-800/50 hover:bg-blue-800/40 transition-colors text-sm flex items-center gap-2 mb-16"
           >
             Подробнее
             <ChevronRight className="w-4 h-4" />
@@ -199,10 +199,10 @@ export function AISection() {
           >
             <div className="grid grid-cols-1 md:grid-cols-2">
               {/* Left column */}
-              <div className="border-t border-r border-b border-zinc-800/60 pt-12 pr-12 pb-16">
-                <h3 className="text-zinc-200 font-medium text-xl mb-3">Автопилот для продукта</h3>
-                <p className="text-zinc-500 text-base mb-8">
-                  Оптимизируйте рабочие процессы с ИИ-ассистентом для рутинных и ручных задач.
+              <div className="border-t border-r border-b border-blue-900/30 pt-12 pr-12 pb-16">
+                <h3 className="text-blue-100 font-medium text-xl mb-3">Умный анализ улик</h3>
+                <p className="text-blue-400/40 text-base mb-8">
+                  ИИ помогает классифицировать находки, искать связи и предлагать следующие шаги расследования.
                 </p>
 
                 {/* Triage Intelligence Card */}
@@ -281,10 +281,10 @@ export function AISection() {
               </div>
 
               {/* Right column */}
-              <div className="border-t border-b border-zinc-800/60 pt-12 pl-12 pb-16">
-                <h3 className="text-zinc-200 font-medium text-xl mb-3">Orbit MCP</h3>
-                <p className="text-zinc-500 text-base mb-8">
-                  Подключите Orbit к любимым инструментам: Cursor, Claude, ChatGPT и другим.
+              <div className="border-t border-b border-blue-900/30 pt-12 pl-12 pb-16">
+                <h3 className="text-blue-100 font-medium text-xl mb-3">OSINT API</h3>
+                <p className="text-blue-400/40 text-base mb-8">
+                  Интегрируйте платформу в свои инструменты: Maltego, Obsidian, собственные скрипты и другие.
                 </p>
 
                 {/* MCP Code Snippet */}

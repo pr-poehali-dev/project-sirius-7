@@ -3,7 +3,7 @@ import { ChevronRight, Plus } from "lucide-react"
 
 const featureCards = [
   {
-    title: "Планирование спринтов",
+    title: "Геолокация по фото",
     illustration: (
       <div className="relative w-full h-full flex items-center justify-center overflow-hidden rounded-lg">
         <svg
@@ -51,7 +51,7 @@ const featureCards = [
     ),
   },
   {
-    title: "Управление итерациями",
+    title: "Анализ социальных сетей",
     illustration: (
       <div className="relative w-full h-full flex items-center justify-center overflow-hidden">
         <img
@@ -64,7 +64,7 @@ const featureCards = [
     ),
   },
   {
-    title: "Когда важна точность",
+    title: "Цифровые следы и метаданные",
     illustration: (
       <div className="relative w-full h-full flex items-center justify-center overflow-hidden">
         <img
@@ -80,12 +80,12 @@ const featureCards = [
 
 export function FeatureCardsSection() {
   return (
-    <div className="relative z-20 py-40" style={{ backgroundColor: "#09090B" }}>
+    <div className="relative z-20 py-40" style={{ backgroundColor: "#050d1f" }}>
       <div
         className="absolute top-0 left-0 right-0 pointer-events-none"
         style={{
           height: "20%",
-          background: "linear-gradient(to bottom, rgba(255,255,255,0.05) 0%, transparent 100%)",
+          background: "linear-gradient(to bottom, rgba(37,99,235,0.04) 0%, transparent 100%)",
         }}
       />
       <div className="w-full flex justify-center px-6">
@@ -105,7 +105,7 @@ export function FeatureCardsSection() {
                 lineHeight: 1.1,
               }}
             >
-              Создан для современных команд
+              Создан для OSINT-исследователей
             </motion.h2>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -114,11 +114,11 @@ export function FeatureCardsSection() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="max-w-md"
             >
-              <p className="text-zinc-400 leading-relaxed">
-                Orbit основан на практиках и принципах, которые отличают лучшие продуктовые команды:
-                фокус на главном, быстрое исполнение и внимание к качеству.{" "}
-                <a href="#" className="text-white inline-flex items-center gap-1 hover:underline">
-                  Перейти на Orbit <ChevronRight className="w-4 h-4" />
+              <p className="text-blue-300/50 leading-relaxed">
+                Платформа построена на реальных методиках разведки по открытым источникам:
+                структурированные задачи, прогрессия сложности и детальный разбор решений.{" "}
+                <a href="#" className="text-blue-400 inline-flex items-center gap-1 hover:underline">
+                  Начать бесплатно <ChevronRight className="w-4 h-4" />
                 </a>
               </p>
             </motion.div>
@@ -133,7 +133,7 @@ export function FeatureCardsSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.2 + index * 0.1 }}
-                className="bg-zinc-900/50 border border-zinc-800 hover:border-zinc-700 transition-colors cursor-pointer group overflow-hidden relative flex flex-col justify-end"
+                className="bg-blue-950/30 border border-blue-900/40 hover:border-blue-700/60 transition-colors cursor-pointer group overflow-hidden relative flex flex-col justify-end"
                 style={{
                   aspectRatio: "336 / 360",
                   borderRadius: "30px",
@@ -155,7 +155,7 @@ export function FeatureCardsSection() {
                   style={{ padding: "0 24px 40px", gap: "16px" }}
                 >
                   <h3 className="text-white font-medium text-lg leading-tight">{card.title}</h3>
-                  <div className="w-8 h-8 rounded-full border border-zinc-700 flex items-center justify-center text-zinc-500 group-hover:border-zinc-500 group-hover:text-zinc-300 transition-colors flex-shrink-0">
+                  <div className="w-8 h-8 rounded-full border border-blue-800/60 flex items-center justify-center text-blue-400/60 group-hover:border-blue-500 group-hover:text-blue-300 transition-colors flex-shrink-0">
                     <Plus className="w-4 h-4" />
                   </div>
                 </div>
